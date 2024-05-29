@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .home {
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            padding-right: 50px;
+        }
+        #about{
+        padding: 20px;
+
+        }
+        #contact {
+            padding: 20px;
+            padding-right: 20px;
+
+        }
+
+        .bar {
+            padding: 30px;
+            color: black;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .box1 {
+            width: 400px;
+        }
+
+        .box2 {
+            width: 400px;
+        }
+
+        /* Top Navbar for smaller screens */
+        @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .navbar {
+        text-align: center;
+        background-color: #000000;
+        color: white;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+/* Side Navbar for larger screens */
+@media (min-width: 769px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 20%; /* Set the width of the side navbar */
+        background-color: #070707;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .home {
+        margin-left: 220px; /* Adjust content margin to accommodate side navbar */
+    }
+}
+
+        @media (max-width: 768px) {
+            .bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .price {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Reputation {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+    .navbar img {
+        display: none; /* Hide the navbar image on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar img {
+        display: block; /* Display the navbar image on larger screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar i {
+        display: none; /* Hide the navbar image on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar i {
+        display: block; /* Display the navbar image on larger screens */
+        margin: 10px;
+        font-size: 24px; /* Increase the size of the icons */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+<div>
+    <!---------Home---------------> 
+
+    <nav class="navbar">
+       
+        <ul class="nav-links">
+            <img src="https://www.w3schools.com/w3images/man_smoke.jpg">
+          
+            <li><a href="#"><i class="fas fa-home" ></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#phots"><i class="fas fa-eye"></i> Photos</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+
+        <div class="home" >
+        <h1 style="text-align: center;">John Doe.</h1>
+        <p style="text-align: center;">Photographer and Web Designer.</p>
+        <img src="https://www.w3schools.com/w3images/man_smoke.jpg">
+<div id="about">
+
+
+        <h1>My Name</h1>
+        <hr style="color: gray; width: 150px; margin-left: 0; ">
+        <p style="color: gray; ">
+            Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+        </p>
+    </div>
+        <h1 style="color: white;"> My skills</h1>
+        <h4 style="color: gray;">Photography </h4>
+        <hr style="width: auto; height: 25px; text-align: start; margin-left:0; margin-right: 20px;  background: linear-gradient(to right, gray 90%, white 80%); ">
+        <h4 style="color: gray;">Web Design </h4>
+        <hr style="width: auto; height: 25px; text-align: start; margin-left:0; margin-right: 20px;  background: linear-gradient(to right, gray 70%, white 70%); ">
+        <h4 style="color: gray;">Photoshop </h4>
+        <hr style="width: auto; height: 25px; text-align: start; margin-left:0; margin-right: 20px;   background: linear-gradient(to right, gray 60%, white 60%);">
+    
+       <div style="background-color: white; display: flex;" class="bar"> 
+        <p>11+<br> Partners</p>
+        <p>100+<br> Projects Done</p>
+        <p>89+<br>Happy Clients</p>
+        <p>150+<br>Meetings</p>
+       </div>
+
+       <button style="background-color: white; color: black; height: 50px; width: 200px; margin-top: 30px;"> Download Resume </button>
+        <h1> My Price</h1>
+
+        <div class="price" style="display: flex; column-gap: 20px;">
+          
+                <div class="box1" style="  text-align: center;background-color: rgb(248, 247, 247); margin-bottom: 20px;"> 
+                    <h3 style="background-color: rgb(88, 85, 85); color:white;">Basic</h3>
+                    <hr>
+                     <p style="color: black;">web design</p>
+                     <hr style="color: rgb(68, 64, 64);">
+                     <p style="color: black;">storage</p>
+                     <hr style="color: rgb(68, 64, 64);">
+                     <p style="color: black;" >support</p>
+                     <hr style="color: rgb(68, 64, 64);" >
+                     <p style="color: black;">per month</p>
+                     <hr style="color: rgb(68, 64, 64);" >
+                     <button>
+                        Signup
+                     </button>
+                 </div>
+
+                 <div class="box2" style="  text-align: center;background-color: rgb(248, 247, 247); margin-bottom: 20px;"> 
+                    <h3 style=" background-color: rgb(65, 62, 62);">Basic</h3> 
+                    <hr>
+                     <p style="color: black;">web design</p>
+                     <hr style="color: rgb(68, 64, 64);">
+                     <p style="color: black;">storage</p>
+                     <hr style="color: rgb(68, 64, 64);">
+                     <p style="color: black;" >support</p>
+                     <hr style="color: rgb(68, 64, 64);" >
+                     <p style="color: black;">per month</p>
+                     <hr style="color: rgb(68, 64, 64);" >
+                     <button>
+                        Signup
+                     </button>
+                 </div>
+        </div>
+
+       <h1> My Reputation</h1> 
+       <div style="display: flex; margin-bottom: 30px; " class="Reputation" s>
+            <img src="https://www.w3schools.com/w3images/bandmember.jpg" style="border-radius:50%; width: 100px; height: 100px;">
+     
+            <div class="Reputation" style="display: flex; flex-direction: column; padding-left: 30px;">
+                <p> Chris Fox. CEO at Mighty Schools.</p>
+                <p> John Doe saved us from a web disaster.</p>
+            </div>
+       </div>
+
+       <div style="display: flex;" class="Reputation">
+        <img src="https://www.w3schools.com/w3images/avatar_g2.jpg"style="border-radius:50%; width: 100px; height: 100px;" >
+
+        <div class="Reputation" style="display: flex; flex-direction: column; padding-left: 30px; ">
+            <p> Chris Fox. CEO at Mighty Schools.</p>
+            <p> John Doe saved us from a web disaster.</p>
+        </div>
+       </div>
+
+
+
+       <div id="photos">
+       <h1> My Photos</h1>
+       <hr style="color: gray; width: 150px; margin-left: 0; ">
+       <div>
+        <!-- <table>
+            <tr>
+                <td> <img src="https://www.w3schools.com/w3images/wedding.jpg"> </td>
+                <td> <img src="https://www.w3schools.com/w3images/underwater.jpg"></td>
+            </tr>
+            <tr >
+                  <td><img src="https://www.w3schools.com/w3images/rocks.jpg"></td>
+                  <td> <img src="https://www.w3schools.com/w3images/chef.jpg"></td>
+            </tr>
+           
+            <tr> 
+                <td><img src="https://www.w3schools.com/w3images/sailboat.jpg"></td>
+                <td> <img src="https://www.w3schools.com/w3images/p6.jpg"></td>
+            </tr>
+        </table> -->
+       </div>
+
+</div>
+
+
+       <div id="contact">
+       <h1> Contact Me</h1>
+       <hr style="color: gray; width: 150px; margin-left: 0; ">
+       <p style="color: gray;">  Chicago, US </p>
+       <p style="color: gray;"> Phone: +00 151515 </p>
+       <p style="color: gray;">  Email: mail@mail.com</p>
+       </div>
+
+       <div>
+         <p style="color: gray;"> Let's get in touch. Send me a message: </p>
+         <form>
+            <input type="text" placeholder="Name" style="background-color: white; width: 100%; height: 50px; margin-bottom: 10px;" ><br/>
+            <input type="text" placeholder="Email" style="background-color: white; width:100%; height: 50px; margin-bottom: 10px;  "><br/>
+            <input type="text" placeholder="Subject" style="background-color: white; width:100%; height: 50px; margin-bottom: 10px; " ><br/>
+            <input type="text" placeholder="Messgae" style="background-color: white; width:100%; height: 50px;  margin-bottom: 30px;" ><br/>
+            <button type="submit" style="background-color: white; width: 200px; height: 50px; color: black;">
+                <i  ></i> SEND MESSAGE
+            </button>
+         </form>
+       </div>
+
+
+       <div style="margin-top: 30px;">
+        <a href="https://www.facebook.com" style="color: rgb(67, 67, 67); margin-right: 10px;">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" style="color: rgb(57, 56, 56); margin-right: 10px;">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" style="color: rgb(66, 65, 65); margin-right: 10px;">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" style="color: rgb(95, 93, 93);">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <p style="color: gray;">Powered by w3.css</p>
+    </div>
+
+
+    </div>
+
+
+</div>   
+
+</body>
+
+</html>
